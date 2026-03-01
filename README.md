@@ -81,6 +81,10 @@ Rumi Coin (RUMI) will evolve into the native currency of the ecosystem.
 
 ```
 
+## 📚 Documentation
+
+- [Application UI](UI.md) — Detailed description of the Rumi application interface, including marketplace, compliance dashboard, and stone cut attributes.
+
 ### Gemstones Semi-Precious Stones that originate from Peru
 
 * Amethyst
