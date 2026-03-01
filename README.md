@@ -24,14 +24,62 @@ An online platform displaying these stones improves visibility and increases the
 
 ---
 
-## ✨ Mounted Stones
-Rumi also recognizes the artistry of how stones are presented. Many gems are mounted in handcrafted settings that add cultural and artistic value. Rumi NFTs capture this detail by embedding mount information directly into metadata.
+## ✨ Mounted Stones & Stone Cuts
+Rumi also recognizes the artistry of how stones are presented. Many gems are mounted in handcrafted settings and cut in specific ways that add cultural and artistic value. Rumi NFTs capture these details by embedding mount and cut information directly into metadata.
 
 - **Mount Type:** Silver bezel, gold prong, textile wrap, etc.  
 - **Artisan Recognition:** Name or ID of the craftsman.  
 - **Technique:** Filigree, inlay, carving, weaving.  
+- **Stone Cut:** Brilliant, cabochon, emerald, princess, or custom artisanal cuts.  
 - **Certification:** Optional fair trade or sustainability certifications.  
-- **Visual Proof:** Images or 3D scans of the mountedhain project is to establish the tokenization and display of stones originating from Peru.
+- **Visual Proof:** Images or 3D scans of the mounted and cut stone.  
+
+This ensures buyers appreciate both the stone’s provenance and the artistry of its mount and cut.
+
+---
+
+## Future Vision: Rumi Coin
+Rumi Coin (RUMI) will evolve into the native currency of the ecosystem.  
+- Used to buy and sell Rumi NFTs.  
+- Rewards miners/artisans for tokenizing stones.  
+- Enables fractional ownership of high‑value gems.  
+- Paired with USDC in liquidity pools to establish real cash value.  
+
+---
+
+## 📊 Example NFT Metadata
+```json
+{
+  "stone_id": "RUMI-000123",
+  "origin": {
+    "region": "Cusco, Peru",
+    "mine": "Quispicanchi",
+    "legal_origin": true,
+    "export_permit": "PERU-EXP-2026-0456"
+  },
+  "stone": {
+    "type": "Amethyst",
+    "weight": "2.5 carats",
+    "grading": "AAA",
+    "cut": "Brilliant"
+  },
+  "mount": {
+    "type": "Handcrafted silver bezel",
+    "artisan": "Juan Pérez",
+    "technique": "Filigree",
+    "certification": "Fair Trade Silver"
+  },
+  "compliance": {
+    "law_reference": "DS Nº 014-92-EM",
+    "customs_clearance": true
+  },
+  "media": {
+    "images": ["ipfs://QmExampleHash"],
+    "3d_scan": "ipfs://QmExample3DHash"
+  }
+}
+
+```
 
 ### Gemstones Semi-Precious Stones that originate from Peru
 
