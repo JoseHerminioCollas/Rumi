@@ -132,6 +132,11 @@ Rumi tokens are governed by the [Ley General de Minería (DS Nº 014-92-EM)](htt
     "standard_compliance": "Ley General de Minería Art. 4 & 6"
   },
   "attributes": [
+    {"trait_type": "Date Mined", "value": "2024-03-15" },
+    {"trait_type": "Mining Concession", "value": "Quispicanchi-01" },
+    {"trait_type": "REINFO ID", "value": "PERU-MIN-12345" },
+    {"trait_type": "Raw Weight", "value": "15.4 grams" },
+    {"trait_type": "Geological Belt", "value": "Nazca-Ocoña" },
     { "trait_type": "Track", "value": "Track A: Certified Origin" },
     { "trait_type": "Legal Status", "value": "certified_origin" },
     { "trait_type": "Mining Concession", "value": "Quispicanchi-01" },
