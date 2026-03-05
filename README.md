@@ -45,41 +45,6 @@ Rumi Coin (RUMI) will evolve into the native currency of the ecosystem.
 - Enables fractional ownership of high‑value gems.  
 - Paired with USDC in liquidity pools to establish real cash value.  
 
----
-
-## 📊 Example NFT Metadata
-```json
-{
-  "stone_id": "RUMI-000123",
-  "origin": {
-    "region": "Cusco, Peru",
-    "mine": "Quispicanchi",
-    "legal_origin": true,
-    "export_permit": "PERU-EXP-2026-0456"
-  },
-  "stone": {
-    "type": "Amethyst",
-    "weight": "2.5 carats",
-    "grading": "AAA",
-    "cut": "Brilliant"
-  },
-  "mount": {
-    "type": "Handcrafted silver bezel",
-    "artisan": "Juan Pérez",
-    "technique": "Filigree",
-    "certification": "Fair Trade Silver"
-  },
-  "compliance": {
-    "law_reference": "DS Nº 014-92-EM",
-    "customs_clearance": true
-  },
-  "media": {
-    "images": ["ipfs://QmExampleHash"],
-    "3d_scan": "ipfs://QmExample3DHash"
-  }
-}
-
-```
 
 ## 📚 Documentation
 
