@@ -116,58 +116,57 @@ Rumi tokens are governed by the [Ley General de Minería (DS Nº 014-92-EM)](htt
 
 ## 6. Sample JSON Metadata (HIP-412)
 
-### Track A: Certified
+### Track A, B: Hybrid Origin and Retail
 
 ```json
-{
-  "name": "Rumi Stone #001",
+ {
+  "name": "Rumi Stone #001 - Amethyst",
   "creator": "Rumi Project",
-  "description": "Tokenized Peruvian Mineral - Provenance and Artistry on Hedera.",
-  "image": "ipfs://QmExampleHash/stone_front.jpg",
+  "description": "Premium Peruvian Amethyst. Masterwork provenance from Quispicanchi Mine to handcrafted silver filigree.",
+  "image": "ipfs://QmThumbnailImageHash",
   "type": "image/jpg",
   "format": "HIP412@2.0.0",
   "properties": {
-    "stone_id": "RUMI-2024-001",
-    "legal_uri": "https://rumi.earth",
-    "standard_compliance": "Ley General de Minería Art. 4 & 6"
+    "stone_id": "RUMI-2026-HYB-01",
+    "legal_uri": "https://rumi.earth/verify/001",
+    "receipt_scan": "ipfs://QmReceiptScanHash",
+    "standard_compliance": "DS Nº 014-92-EM",
+    "reinfo_id": "PERU-MIN-12345",
+    "mining_concession": "Quispicanchi-01"
   },
+  "files": [
+    {
+      "uri": "ipfs://QmFullResMasterHash",
+      "type": "image/jpg",
+      "is_default_file": true,
+      "metadata": { "description": "High-Resolution Master Image" }
+    },
+    {
+      "uri": "ipfs://Qm3DScanHash",
+      "type": "model/gltf-binary",
+      "metadata": { "description": "Interactive 3D Scan" }
+    },
+    {
+      "uri": "ipfs://QmReceiptScanHash",
+      "type": "application/pdf",
+      "metadata": { "description": "Legal Proof of Possession" }
+    }
+  ],
   "attributes": [
-    {"trait_type": "Date Mined", "value": "2024-03-15" },
-    {"trait_type": "Mining Concession", "value": "Quispicanchi-01" },
-    {"trait_type": "REINFO ID", "value": "PERU-MIN-12345" },
-    {"trait_type": "Raw Weight", "value": "15.4 grams" },
-    {"trait_type": "Geological Belt", "value": "Nazca-Ocoña" },
-    { "trait_type": "Track", "value": "Track A: Certified Origin" },
-    { "trait_type": "Legal Status", "value": "certified_origin" },
+    { "trait_type": "Stone Type", "value": "Amethyst" },
+    { "trait_type": "Weight", "value": "2.5 carats" },
+    { "trait_type": "Grading", "value": "AAA" },
+    { "trait_type": "Date Mined", "value": "2024-03-15" },
+    { "trait_type": "Stone Cut", "value": "Brilliant" },
+    { "trait_type": "Artisan", "value": "Juan Pérez" },
+    { "trait_type": "Artisan Technique", "value": "Silver Filigree" },
+    { "trait_type": "Track", "value": "Track B: Retail w/ Mine Data" },
+    { "trait_type": "Acquisition Point", "value": "Inca Jewels Boutique, Cusco" },
     { "trait_type": "Mining Concession", "value": "Quispicanchi-01" },
-    { "trait_type": "REINFO ID", "value": "PERU-MIN-12345" }
-  ]
-}
-
-
-```
-
-## Track B: Legacy/Retail
-
-```json
-{
-  "name": "Rumi Heritage #992",
-  "creator": "Rumi Project",
-  "description": "Peruvian Artisanal Stone - Legacy Acquisition and Cultural Craft.",
-  "image": "ipfs://QmExampleHash/heritage_stone.jpg",
-  "type": "image/jpg",
-  "format": "HIP412@2.0.0",
-  "properties": {
-    "stone_id": "RUMI-LEGACY-992",
-    "legal_uri": "https://rumi.earth",
-    "standard_compliance": "Ley General de Minería Art. 6 (Posesión)"
-  },
-  "attributes": [
-    { "trait_type": "Track", "value": "Track B: Legacy/Retail" },
-    { "trait_type": "Legal Status", "value": "retail_acquisition" },
-    { "trait_type": "Acquisition Point", "value": "Cusco Artisanal Market" },
-    { "trait_type": "Artisan Technique", "value": "Filigree" }
+    { "trait_type": "REINFO ID", "value": "PERU-MIN-12345" },
+    { "trait_type": "Legal Status", "value": "Certified Origin & Possession" }
   ]
 }
 
 ```
+ 
