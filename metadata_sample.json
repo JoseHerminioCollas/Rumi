@@ -14,6 +14,8 @@
     "reinfo_id": "PERU-MIN-12345",
     "mining_concession": "Quispicanchi-01",
     "vendor_ruc": "20123456789",
+    "artisan_rna": "RNA-987654",
+    "cod_reference": "VUCE-COD-2026-001",
     "compliance_proof_hcs": "0.0.987654",
     "last_regulatory_check": "2026-03-06T17:44:00Z"
   },
@@ -43,6 +45,7 @@
     { "trait_type": "Date Mined", "value": "2024-03-15" },
     { "trait_type": "Stone Cut", "value": "Brilliant" },
     { "trait_type": "Artisan", "value": "Juan Pérez" },
+    { "trait_type": "Artisan RNA", "value": "RNA-987654" },
     { "trait_type": "Artisan Technique", "value": "Silver Filigree" },
     { "trait_type": "Track", "value": "Track B: Retail w/ Mine Data" },
     { "trait_type": "Acquisition Point", "value": "Inca Jewels Boutique, Cusco" },
