@@ -6,34 +6,42 @@ This strategy outlines the implementation of **Rumi**, a project on **Hedera** d
 Categorize every asset into one of two cryptographic tracks to manage the variability of Peruvian sourcing.
 
 *   **Track A: Documented Origin**
-    *   For stones with [REINFO](https://www.gob.pe) (Mining Formalization) or [VUCE](https://www.vuce.gob.pe) permits.
+    *   For stones with [REINFO](https://padron.minem.gob.pe) (Mining Formalization) or [VUCE](https://www.vuce.gob.pe) permits.
     *   Map mining concession coordinates and [SUNAT](https://www.sunat.gob.pe) invoice data to the metadata.
 *   **Track B: Legacy & Retail**
     *   For stones purchased in shops or markets without a documented history.
     *   Establish the **Point of Sale (PoS)** in Peru as the genesis event.
     *   Focus metadata on "Peruvian Heritage" and the artistry of the mount.
 
-## 2. Metadata Standardization  ([https://hips.hedera.com](https://hips.hedera.com/hip/hip-412))
+## 2. Compliance Automation & Regulatory Database Integration
+Explicitly link the minting process to official Peruvian government databases to ensure high-integrity RWA tokenization.
+
+*   **MINEM (REINFO) Integration:** Automate the validation of mining concessions by querying the [REINFO Public Registry](https://padron.minem.gob.pe). Minting for Track A is programmatically restricted unless the miner’s RUC is in a state of **Vigente** (Active).
+*   **SUNAT RUC Validation:** Use [SUNAT Web Services](https://cpe.sunat.gob.pe) to verify the tax standing and economic activity of vendors for Track B assets, ensuring legal acquisition under **Article 6**.
+*   **VUCE Digital Handshake:** Cross-reference export permits and Certificates of Origin through the [VUCE Interoperability API](https://landing.vuce.gob.pe) to append verified export status to the NFT lifecycle.
+*   **HCS Proof of Compliance:** For every successful database check, submit a message to the **Hedera Consensus Service (HCS)** containing the timestamped hash of the regulatory record, creating an immutable audit trail.
+
+## 3. Metadata Standardization ([HIP-412](https://hips.hedera.com))
 Standardize the JSON schema to align with [PROMPERÚ](https://exportemos.pe) and international trade standards.
 
 *   **Legal Status Field:** **Values like** `certified_origin`, `retail_acquisition`, or `legacy_collection`.
 *   **Identification:** Capture the **RUC** (Tax ID) of the vendor or the [RNA (Registro Nacional del Artesano)](https://artesania.mincetur.gob.pe) ID of the artisan.
 *   **Trade Codes:** Assign the **Harmonized System (HS) Code** based on [Aduanet](http://www.aduanet.gob.pe) classifications (e.g., `7103` for semi-precious stones).
 
-## 3. The Validation Layer
-Utilize [Hedera](https://hedera.com) features to mitigate the risk of tokenizing undocumented stones.
+## 4. The Validation Layer
+Utilize **Hedera** features to mitigate the risk of tokenizing undocumented stones.
 
 *   **Multi-Sig Sign-off:** Use a **Hedera Threshold Key**. A local expert or gemologist must sign the minting transaction.
 *   **Cultural Protection:** Verify that the stone is not a protected archaeological artifact ([Patrimonio Cultural](https://www.gob.pe)) before the NFT is generated.
 
-## 4. Physical-to-Digital Anchoring
+## 5. Physical-to-Digital Anchoring
 Ensure the physical stone and the NFT remain a single unit through immutable records.
 
 *   **Optical Fingerprinting:** Capture macro-photography of unique internal inclusions and upload to [IPFS](https://ipfs.tech).
-*   **Immutable Logs:** Use the [Hedera Consensus Service (HCS)](https://docs.hedera.com) to record the stone's journey from shop to buyer.
+*   **Immutable Logs:** Use the **Hedera Consensus Service (HCS)** to record the stone's journey from shop to buyer.
 *   **Physical Pairing:** Issue a QR-enabled "Rumi Identity Card" at the point of purchase to link the specimen to its Mainnet record.
 
-## 5. Artisan & Marketplace Onboarding
+## 6. Artisan & Marketplace Onboarding
 Focus the initial launch on the jewelry sectors of Cusco and Lima (Miraflores).
 
 *   **Artisan Profiles:** Create decentralized identifiers for craftsmen to vouch for techniques.
