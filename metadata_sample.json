@@ -7,6 +7,7 @@
   "format": "HIP412@2.0.0",
   "properties": {
     "stone_id": "RUMI-2026-HYB-01",
+    "hs_code": "7103.99.00.00",
     "legal_uri": "https://rumi.earth",
     "receipt_scan": "ipfs://QmReceiptScanHash",
     "standard_compliance": "DS Nº 014-92-EM",
@@ -36,6 +37,7 @@
   ],
   "attributes": [
     { "trait_type": "Stone Type", "value": "Amethyst" },
+    { "trait_type": "HS Code", "value": "7103.99.00.00" },
     { "trait_type": "Weight", "value": "2.5 carats" },
     { "trait_type": "Grading", "value": "AAA" },
     { "trait_type": "Date Mined", "value": "2024-03-15" },
@@ -52,4 +54,3 @@
     { "trait_type": "HCS Compliance Link", "value": "0.0.987654" }
   ]
 }
-
