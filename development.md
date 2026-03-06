@@ -158,11 +158,12 @@ Rumi tokens are governed by the [Ley General de Minería (DS Nº 014-92-EM)](htt
   "format": "HIP412@2.0.0",
   "properties": {
     "stone_id": "RUMI-2026-HYB-01",
-    "legal_uri": "https://rumi.earth/verify/001",
+    "legal_uri": "https://rumi.earth",
     "receipt_scan": "ipfs://QmReceiptScanHash",
     "standard_compliance": "DS Nº 014-92-EM",
     "reinfo_id": "PERU-MIN-12345",
     "mining_concession": "Quispicanchi-01",
+    "vendor_ruc": "20123456789",
     "compliance_proof_hcs": "0.0.987654",
     "last_regulatory_check": "2026-03-06T17:44:00Z"
   },
@@ -197,6 +198,7 @@ Rumi tokens are governed by the [Ley General de Minería (DS Nº 014-92-EM)](htt
     { "trait_type": "Mining Concession", "value": "Quispicanchi-01" },
     { "trait_type": "REINFO ID", "value": "PERU-MIN-12345" },
     { "trait_type": "REINFO Status", "value": "Vigente" },
+    { "trait_type": "Vendor RUC", "value": "20123456789" },
     { "trait_type": "Legal Status", "value": "Certified Origin & Possession" },
     { "trait_type": "HCS Compliance Link", "value": "0.0.987654" }
   ]
