@@ -140,7 +140,9 @@ Rumi tokens are governed by the [Ley General de Minería (DS Nº 014-92-EM)](htt
     "receipt_scan": "ipfs://QmReceiptScanHash",
     "standard_compliance": "DS Nº 014-92-EM",
     "reinfo_id": "PERU-MIN-12345",
-    "mining_concession": "Quispicanchi-01"
+    "mining_concession": "Quispicanchi-01",
+    "compliance_proof_hcs": "0.0.987654",
+    "last_regulatory_check": "2026-03-06T17:44:00Z"
   },
   "files": [
     {
@@ -172,9 +174,12 @@ Rumi tokens are governed by the [Ley General de Minería (DS Nº 014-92-EM)](htt
     { "trait_type": "Acquisition Point", "value": "Inca Jewels Boutique, Cusco" },
     { "trait_type": "Mining Concession", "value": "Quispicanchi-01" },
     { "trait_type": "REINFO ID", "value": "PERU-MIN-12345" },
-    { "trait_type": "Legal Status", "value": "Certified Origin & Possession" }
+    { "trait_type": "REINFO Status", "value": "Vigente" },
+    { "trait_type": "Legal Status", "value": "Certified Origin & Possession" },
+    { "trait_type": "HCS Compliance Link", "value": "0.0.987654" }
   ]
 }
+
 
 ```
  
