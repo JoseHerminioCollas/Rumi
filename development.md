@@ -1,4 +1,5 @@
-# Rumi Development Strategy: Phase 1
+# Rumi: Development Strategy & Compliance Framework
+
 
 This strategy outlines the implementation of **Rumi**, a project on **Hedera** designed to automate compliance and illuminate the provenance of tokenized Peruvian stones.
 
