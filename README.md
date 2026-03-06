@@ -19,7 +19,7 @@ Peruvian law requires that the origin of any gem or mineral be legally sourced. 
 An online platform displaying these stones improves visibility and increases the potential for sales. The objective of the Rumi project is to establish the **tokenization and display of stones originating from Peru**.  
 
 **Relevant References:**  
-- Ley General de Minería (DS Nº 014-92-EM) [(bing.com in Bing)](https://www.bing.com/search?q=Ley+General+de+Miner%C3%ADa+DS+014-92-EM+Peru) — Peru’s General Mining Law  
+- Ley General de Minería (DS Nº 014-92-EM)   ([ Ley General de Minería](https://wimperu.org/publicaciones/texto-unico-ordenado-de-la-ley-general-de-mineria/)) — Peru’s General Mining Law  
 - [Exportemos Portal (PROMPERÚ)](https://www.exportemos.pe) — Official portal for Peruvian exports  
 
 ---
