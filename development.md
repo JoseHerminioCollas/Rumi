@@ -71,37 +71,7 @@ Focus the initial launch on the jewelry sectors of Cusco and Lima (Miraflores).
 *   **Simplified Export:** Prepare metadata to auto-populate [Exporta Fácil](http://www.exportafacil.gob.pe) forms for international shipping.
 
 ---
-
-# Rumi: Regulatory and Technical Reference Directory
-
-This directory contains the essential links for the Rumi project to maintain legal compliance with Peruvian law and technical alignment with the Hedera ecosystem.
-
-## 1. Peruvian Regulatory & Export Authorities
-*   **[SUNAT](https://www.sunat.gob.pe):** (Superintendencia Nacional de Aduanas y de Administración Tributaria). The authority for tax and customs.
-    *   *Reference:* [Customs Tariff Search (Arancel de Aduanas)](http://www.aduanet.gob.pe)
-*   **[PROMPERÚ](https://www.gob.pe):** The Commission for the Promotion of Peru for Export and Tourism.
-    *   *Reference:* [Exportemos Portal](https://exportemos.pe)
-*   **[VUCE](https://www.vuce.gob.pe):** (Ventanilla Única de Comercio Exterior). The portal for electronic permits for restricted goods.
-*   **[MINCETUR](https://www.gob.pe):** (Ministerio de Comercio Exterior y Turismo). The ministry overseeing foreign trade and artisanal crafts.
-*   **[SERPOST / Exporta Fácil](http://www.exportafacil.gob.pe):** The simplified export regime for small businesses and artisans.
-
-## 2. Mining & Legal Frameworks
-*   **[INGEMMET](https://www.gob.pe):** (Instituto Geológico, Minero y Metalúrgico). The entity that manages mining concessions and geological data.
-*   **[MINEM](https://www.gob.pe):** (Ministerio de Energía y Minas). Oversees mining policies and the **REINFO** (Registro Integral de Formalización Minera).
-*   **[Ley General de Minería](https://www.gob.pe):** (DS Nº 014-92-EM). The primary legislation governing mineral origin and ownership.
-*   **Article 4 (Libre Comercialización):** Defines the right to free internal and external trade of mineral products.
-*   **Article 6 (Posesión de Minerales):** Governs the legal possession of minerals by non-concession holders (retailers/artisans).
-*   **Article 263 (Comercialización Interna):** Regulations regarding the purchase and sale of minerals within the national territory for transformation or export.
-
-## 3. Cultural & Artistic Heritage
-*   **[Ministerio de Cultura](https://www.gob.pe):** Responsible for certifying that stones (especially carved ones) are not "Patrimonio Cultural" (Cultural Heritage).
-*   **[RNA (Registro Nacional del Artesano)](https://artesania.mincetur.gob.pe):** The official registry for Peruvian artisans used for metadata verification.
-
-## 4. Technical Infrastructure
-*   **[Hedera Developer Docs](https://docs.hedera.com):** Documentation for HTS (Token Service) and HCS (Consensus Service).
-*   **[HIP-412 Metadata Standard](https://hips.hedera.com):** The community standard for NFT metadata on Hedera.
-*   **[IPFS (InterPlanetary File System)](https://ipfs.tech):** Decentralized storage for stone imagery and 3D scans.
-
+ 
 # Rumi: Development Strategy & Metadata Standards
 
 This strategy outlines the implementation of **Rumi**, utilizing the [Hedera Token Service (HTS)](https://docs.hedera.com) to automate compliance and illuminate the provenance of tokenized Peruvian stones.
@@ -143,67 +113,8 @@ Rumi tokens are governed by the [Ley General de Minería (DS Nº 014-92-EM)](htt
 *   **Article 4 (Libre Comercialización):** Guarantees the right to free internal and external trade of mineral products.
 *   **Article 6 (Posesión de Minerales):** Governs the legal possession of minerals by retailers and artisans.
 *   **Article 263 (Comercialización Interna):** Regulates the purchase and sale of minerals for transformation or export.
-
-## 6. Sample JSON Metadata (HIP-412)
-
-### Track A, B: Hybrid Origin and Retail
-
-```json
- {
-  "name": "Rumi Stone #001 - Amethyst",
-  "creator": "Rumi Project",
-  "description": "Premium Peruvian Amethyst. Masterwork provenance from Quispicanchi Mine to handcrafted silver filigree.",
-  "image": "ipfs://QmThumbnailImageHash",
-  "type": "image/jpg",
-  "format": "HIP412@2.0.0",
-  "properties": {
-    "stone_id": "RUMI-2026-HYB-01",
-    "legal_uri": "https://rumi.earth",
-    "receipt_scan": "ipfs://QmReceiptScanHash",
-    "standard_compliance": "DS Nº 014-92-EM",
-    "reinfo_id": "PERU-MIN-12345",
-    "mining_concession": "Quispicanchi-01",
-    "vendor_ruc": "20123456789",
-    "compliance_proof_hcs": "0.0.987654",
-    "last_regulatory_check": "2026-03-06T17:44:00Z"
-  },
-  "files": [
-    {
-      "uri": "ipfs://QmFullResMasterHash",
-      "type": "image/jpg",
-      "is_default_file": true,
-      "metadata": { "description": "High-Resolution Master Image" }
-    },
-    {
-      "uri": "ipfs://Qm3DScanHash",
-      "type": "model/gltf-binary",
-      "metadata": { "description": "Interactive 3D Scan" }
-    },
-    {
-      "uri": "ipfs://QmReceiptScanHash",
-      "type": "application/pdf",
-      "metadata": { "description": "Legal Proof of Possession" }
-    }
-  ],
-  "attributes": [
-    { "trait_type": "Stone Type", "value": "Amethyst" },
-    { "trait_type": "Weight", "value": "2.5 carats" },
-    { "trait_type": "Grading", "value": "AAA" },
-    { "trait_type": "Date Mined", "value": "2024-03-15" },
-    { "trait_type": "Stone Cut", "value": "Brilliant" },
-    { "trait_type": "Artisan", "value": "Juan Pérez" },
-    { "trait_type": "Artisan Technique", "value": "Silver Filigree" },
-    { "trait_type": "Track", "value": "Track B: Retail w/ Mine Data" },
-    { "trait_type": "Acquisition Point", "value": "Inca Jewels Boutique, Cusco" },
-    { "trait_type": "Mining Concession", "value": "Quispicanchi-01" },
-    { "trait_type": "REINFO ID", "value": "PERU-MIN-12345" },
-    { "trait_type": "REINFO Status", "value": "Vigente" },
-    { "trait_type": "Vendor RUC", "value": "20123456789" },
-    { "trait_type": "Legal Status", "value": "Certified Origin & Possession" },
-    { "trait_type": "HCS Compliance Link", "value": "0.0.987654" }
-  ]
-}
-
+ 
+ 
 
 ```
  
