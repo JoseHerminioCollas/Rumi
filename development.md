@@ -13,13 +13,33 @@ Categorize every asset into one of two cryptographic tracks to manage the variab
     *   Establish the **Point of Sale (PoS)** in Peru as the genesis event.
     *   Focus metadata on "Peruvian Heritage" and the artistry of the mount.
 
-## 2. Compliance Automation & Regulatory Database Integration
-Explicitly link the minting process to official Peruvian government databases to ensure high-integrity RWA tokenization.
+### 2. Compliance Automation & Regulatory Database Integration
 
-*   **MINEM (REINFO) Integration:** Automate the validation of mining concessions by querying the [REINFO Public Registry](https://padron.minem.gob.pe). Minting for Track A is programmatically restricted unless the miner’s RUC is in a state of **Vigente** (Active).
-*   **SUNAT RUC Validation:** Use [SUNAT Web Services](https://cpe.sunat.gob.pe) to verify the tax standing and economic activity of vendors for Track B assets, ensuring legal acquisition under **Article 6**.
-*   **VUCE Digital Handshake:** Cross-reference export permits and Certificates of Origin through the [VUCE Interoperability API](https://landing.vuce.gob.pe) to append verified export status to the NFT lifecycle.
-*   **HCS Proof of Compliance:** For every successful database check, submit a message to the **Hedera Consensus Service (HCS)** containing the timestamped hash of the regulatory record, creating an immutable audit trail.
+Explicitly link the minting process to official Peruvian government databases to ensure high-integrity **Real World Asset (RWA)** tokenization. Every asset undergoes an automated **"Regulatory Handshake"** before the NFT is generated.
+
+#### 🏛️ Authority & Database Mapping
+Rumi's backend performs a lookup-and-log sequence against the following entities to verify the legality of the stone:
+
+
+| Authority | Resource | Validation Purpose |
+| :--- | :--- | :--- |
+| **MINEM** | [REINFO Search](https://padron.minem.gob.pe) | Verifies the mining concession is active and the miner is in a state of **Vigente**. |
+| **SUNAT** | [RUC Consultation](https://e-consultaruc.sunat.gob.pe) | Confirms the legal standing of vendors for retail acquisitions under **Article 6**. |
+| **VUCE** | [Permit Verification](https://www.vuce.gob.pe) | Validates export authorizations and Certificates of Origin for international compliance. |
+
+#### 🔗 Technical Implementation: HCS Proof of Compliance
+To ensure transparency, Rumi utilizes the **[Hedera Consensus Service (HCS)](https://docs.hedera.com)** to notarize these database checks:
+
+*   **Immutable Timestamping:** Every successful query to a Peruvian database is logged as a message on a dedicated **HCS Topic**.
+*   **Cryptographic Linkage:** The unique **Topic ID** (e.g., `0.0.987654`) is embedded into the NFT metadata under the `compliance_proof_hcs` field.
+*   **Auditability:** Customs officers at **[SERPOST](https://www.serpost.com.pe)** or international buyers can query the HCS Topic to view the raw, timestamped response from the government database at the moment of minting.
+
+#### 📊 Enhanced Metadata Definitions
+The following fields are integrated into the **[HIP-412](https://hips.hedera.com)** JSON to reflect this automated compliance:
+
+*   **`compliance_proof_hcs`**: The HCS Topic ID containing the immutable record of the regulatory handshake.
+*   **`last_regulatory_check`**: ISO 8601 timestamp (e.g., `2026-03-06T17:44:00Z`) of the most recent database validation.
+*   **`REINFO Status`**: **Values like** `Vigente` or `Formalizado`, directly reflecting the miner’s standing in the **[MINEM](https://padron.minem.gob.pe)** registry.
 
 ## 3. Metadata Standardization ([HIP-412](https://hips.hedera.com))
 Standardize the JSON schema to align with [PROMPERÚ](https://exportemos.pe) and international trade standards.
