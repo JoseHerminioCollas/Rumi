@@ -24,7 +24,7 @@ Rumi's backend performs a lookup-and-log sequence against the following entities
 | Authority | Resource | Validation Purpose |
 | :--- | :--- | :--- |
 | **MINEM** | [REINFO Search](https://padron.minem.gob.pe) | Verifies the mining concession is active and the miner is in a state of **Vigente**. |
-| **SUNAT** | [RUC Consultation](https://e-consultaruc.sunat.gob.pe) | Confirms the legal standing of vendors for retail acquisitions under **Article 6**. |
+| **SUNAT** | [RUC Consultation](https://e-consultaruc.sunat.gob.pe) | Cross-referenced against the **SUNAT RUC Database** to ensure the shop is a legal commercial entity under **Article 6**. |
 | **VUCE** | [Permit Verification](https://www.vuce.gob.pe) | Validates export authorizations and Certificates of Origin for international compliance. |
 
 #### 🔗 Technical Implementation: HCS Proof of Compliance
@@ -39,7 +39,9 @@ The following fields are integrated into the **[HIP-412](https://hips.hedera.com
 
 *   **`compliance_proof_hcs`**: The HCS Topic ID containing the immutable record of the regulatory handshake.
 *   **`last_regulatory_check`**: ISO 8601 timestamp (e.g., `2026-03-06T17:44:00Z`) of the most recent database validation.
-*   **`REINFO Status`**: **Values like** `Vigente` or `Formalizado`, directly reflecting the miner’s standing in the **[MINEM](https://padron.minem.gob.pe)** registry.
+*   **`REINFO Status`**: **Values like** `Vigente` or `Formalizado`, reflecting the miner’s standing in the **[MINEM](https://padron.minem.gob.pe)** registry.
+*   **`vendor_ruc`**: The validated Tax ID of the merchant, ensuring the asset entered the market via a legal commercial entity.
+
 
 ## 3. Metadata Standardization ([HIP-412](https://hips.hedera.com))
 Standardize the JSON schema to align with [PROMPERÚ](https://exportemos.pe) and international trade standards.
