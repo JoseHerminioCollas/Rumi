@@ -54,6 +54,10 @@
     { "trait_type": "REINFO Status", "value": "Vigente" },
     { "trait_type": "Vendor RUC", "value": "20123456789" },
     { "trait_type": "Legal Status", "value": "Certified Origin & Possession" },
-    { "trait_type": "HCS Compliance Link", "value": "0.0.987654" }
+    { "trait_type": "HCS Compliance Link", "value": "0.0.987654" },
+    {"trait_type": "Verification Level", "value": "Full Provenance (Hybrid)"},
+    {"trait_type": "Export Permit ID", "value": "VUCE-2026-EXP-99"},
+    {"trait_type": "Current Location", "value": "Peru - Pending Export"},
+    {"trait_type": "Is Exported", "value": "False"}
   ]
 }
