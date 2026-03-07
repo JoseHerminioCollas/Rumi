@@ -57,14 +57,15 @@ Rumi creates a **single HCS Topic ID**.
 #### 1. Token Creation (Updated)
 ```javascript
 const transaction = new TokenCreateTransaction()
-    .setTokenName("Rumi") // Updated Name
-    .setTokenSymbol("RUMI") // Updated Symbol
+    .setTokenName("Rumi")
+    .setTokenSymbol("RUMI")
     .setTokenType(TokenType.NonFungibleUnique)
     .setTreasuryAccountId(rumiTreasuryId)
-    .setFeeScheduleKey(rumiFeeAdminKey) 
     .setAdminKey(rumiAdminKey)
     .setSupplyKey(rumiSupplyKey)
     .setMetadataKey(rumiMetadataKey)
+    .setPauseKey(rumiAdminKey) // NEW: Security freeze capability
+    .setFeeScheduleKey(rumiFeeAdminKey) 
     .setCustomFees([
         new CustomRoyaltyFee()
             .setNumerator(5) 
@@ -94,6 +95,21 @@ const transaction = new TokenUpdateNftsTransaction()
     .setSerialNumbers([serialNumber])
     .setMetadata(Buffer.from(newIpfsHash)) // Updates CID to new metadata
     .freezeWith(client);
+```
+
+####  2. Master HCS Message Submission
+This is the logic for writing every lifecycle event to your single "Master Registry" topic.
+```javascript
+const transaction = new TopicMessageSubmitTransaction()
+    .setTopicId(rumiMasterTopicId) 
+    .setMessage(JSON.stringify({
+        "stone_id": "RUMI-2026-005",
+        "event": "TRANSFORMATION",
+        "actor_id": "Artisan-RNA-123",
+        "data_hash": "sha256:7f83b165...", 
+        "timestamp": new Date().toISOString()
+    }))
+    .execute(client);
 ```
 
 #### B. HCS Message Schema (JSON)
