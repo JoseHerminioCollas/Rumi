@@ -28,6 +28,8 @@ Explicitly link the minting process to official Peruvian government databases to
 
 New 2026 Requirement (Ley 32537): Mandatory "Proceso de Sinceramiento." The Regulatory Handshake must confirm georeferenced coordinates were submitted via the Ventanilla Virtual. Failure to complete this by April 25, 2026, results in an automatic REINFO suspension, rendering the asset ineligible for minting.
 
+Census Gate (Post-June 2026): Handshake must include the INEI Census Participation ID to ensure the miner is part of the 2026 National MAPE Registry.
+
 "Regulatory Handshake" must specifically check for the Vigente status, as Suspendido is now the trigger for 2026 non-compliance.
 
 ### 🔗 Technical Implementation: HCS Proof of Compliance
@@ -58,6 +60,8 @@ To streamline international trade, Rumi maps specimens to official Peruvian HS C
 4.  **Form Population:** System auto-fills **Exporta Fácil (DEF)** or **VUCE** digital forms.
 5.  **Compliance Check:** Stones identified as **"Patrimonio Cultural"** (Chapter 97) are automatically blocked from receiving export-ready HS codes.
 
+Digital Signature Hashing: The XML digital signature from the VUCE COD is hashed (SHA-256) and recorded on HCS to provide high-assurance provenance for international buyers.
+
 ## 5. The Validation Layer
 *   **Multi-Sig Sign-off:** A local expert or gemologist must sign the minting transaction via a **Hedera Threshold Key**.
 *   **Cultural Protection:** Verify that the stone is not a protected archaeological artifact (**Patrimonio Cultural**) via [Ministerio de Cultura](https://www.gob.pe) datasets.
@@ -79,6 +83,8 @@ Ley Nº 32537 (Dec 2025): Extends REINFO validity to Dec 31, 2026, and mandates 
 SUNAFIL Integration: 2026 regulations now require verifying that REINFO holders have incorporated their workers into the formal payroll (Planilla).
 
 Res. de Superintendencia Nº 0051-2026-SUNAFIL: Approved the 2026 directive for mandatory workplace inspections of REINFO holders. Rumi's due diligence includes verifying the existence of the required Electronic Payroll (Planilla Electrónica).
+
+Ley Nº 32537: Specifically modifies DL 1293 (Formalization) and DL 1107 (Control of Mineral Trade), requiring adquirentes (like Rumi) to verify the specific extraction concession.
 
 *   **Article 4 (Libre Comercialización):** Guarantees the right to free trade of mineral products.
 *   **Article 6 (Posesión de Minerales):** Governs the legal possession of minerals by retailers and artisans.
