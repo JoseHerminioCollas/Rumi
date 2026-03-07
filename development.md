@@ -60,7 +60,7 @@ To streamline international trade, Rumi maps specimens to official Peruvian HS C
 4.  **Form Population:** System auto-fills **Exporta Fácil (DEF)** or **VUCE** digital forms.
 5.  **Compliance Check:** Stones identified as **"Patrimonio Cultural"** (Chapter 97) are automatically blocked from receiving export-ready HS codes.
 
-Digital Signature Hashing: The XML digital signature from the VUCE COD is hashed (SHA-256) and recorded on HCS to provide high-assurance provenance for international buyers.
+Digital Signature Hashing: The XML XAdES-BES digital signature from the VUCE COD is hashed (SHA-256) and recorded on HCS to provide immutable, machine-verifiable proof of origin for international customs.
 
 ## 5. The Validation Layer
 *   **Multi-Sig Sign-off:** A local expert or gemologist must sign the minting transaction via a **Hedera Threshold Key**.
