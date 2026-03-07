@@ -25,6 +25,8 @@ Explicitly link the minting process to official Peruvian government databases to
 | **SUNAT** | [RUC Consultation](https://e-consultaruc.sunat.gob.pe) | Cross-referenced against the **SUNAT RUC Database** to ensure the shop is a legal commercial entity under **Article 6**. |
 | **VUCE** | [Permit Verification](https://www.vuce.gob.pe) | Validates export authorizations and **Digital Certificates of Origin (COD)**. |
 
+New 2026 Requirement: Verification of "Proceso de Sinceramiento" (Ley 32537). Minting must fail if the miner has not updated their coordinates by the April 2026 deadline.
+
 ### 🔗 Technical Implementation: HCS Proof of Compliance
 *   **Immutable Timestamping:** Every successful query to a Peruvian database is logged as a message on a dedicated **Hedera Consensus Service (HCS)** Topic.
 *   **Cryptographic Linkage:** The unique Topic ID (e.g., `0.0.987654`) is embedded into the NFT metadata under the `compliance_proof_hcs` field.
@@ -68,6 +70,10 @@ To streamline international trade, Rumi maps specimens to official Peruvian HS C
 
 ## 8. Regulatory & Legal Framework
 Rumi tokens are governed by the **[Ley General de Minería (DS Nº 014-92-EM)](https://www.gob.pe)**.
+
+Ley Nº 32537 (Dec 2025): Extends REINFO validity to Dec 31, 2026, and mandates a National Census of Small-Scale Mining (INEI/MINEM) to be conducted by June 2026.
+
+SUNAFIL Integration: 2026 regulations now require verifying that REINFO holders have incorporated their workers into the formal payroll (Planilla).
 
 *   **Article 4 (Libre Comercialización):** Guarantees the right to free trade of mineral products.
 *   **Article 6 (Posesión de Minerales):** Governs the legal possession of minerals by retailers and artisans.
