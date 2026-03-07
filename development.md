@@ -9,6 +9,7 @@ Categorize every asset into one of two cryptographic tracks to manage the variab
     *   For stones with [REINFO](https://padron.minem.gob.pe) (Mining Formalization) or [VUCE](https://www.vuce.gob.pe) permits.
     *   **2026 Compliance:** Ensure the miner's REINFO status is active prior to the **Dec 31, 2026** expiration.
     *   Map mining concession coordinates and [SUNAT](https://www.sunat.gob.pe) invoice data to the metadata.
+    *   "Documented Origin" includes active REINFOs on extinguished concessions, provided the link is proven.
 *   **Track B: Legacy & Retail**
     *   For stones purchased in shops or markets without a documented history.
     *   Establish the **Point of Sale (PoS)** in Peru as the genesis event.
@@ -25,7 +26,9 @@ Explicitly link the minting process to official Peruvian government databases to
 | **SUNAT** | [RUC Consultation](https://e-consultaruc.sunat.gob.pe) | Cross-referenced against the **SUNAT RUC Database** to ensure the shop is a legal commercial entity under **Article 6**. |
 | **VUCE** | [Permit Verification](https://www.vuce.gob.pe) | Validates export authorizations and **Digital Certificates of Origin (COD)**. |
 
-New 2026 Requirement: Verification of "Proceso de Sinceramiento" (Ley 32537). Minting must fail if the miner has not updated their coordinates by the April 2026 deadline.
+New 2026 Requirement (Ley 32537): Mandatory "Proceso de Sinceramiento." The Regulatory Handshake must confirm georeferenced coordinates were submitted via the Ventanilla Virtual. Failure to complete this by April 25, 2026, results in an automatic REINFO suspension, rendering the asset ineligible for minting.
+
+"Regulatory Handshake" must specifically check for the Vigente status, as Suspendido is now the trigger for 2026 non-compliance.
 
 ### 🔗 Technical Implementation: HCS Proof of Compliance
 *   **Immutable Timestamping:** Every successful query to a Peruvian database is logged as a message on a dedicated **Hedera Consensus Service (HCS)** Topic.
@@ -74,6 +77,8 @@ Rumi tokens are governed by the **[Ley General de Minería (DS Nº 014-92-EM)](h
 Ley Nº 32537 (Dec 2025): Extends REINFO validity to Dec 31, 2026, and mandates a National Census of Small-Scale Mining (INEI/MINEM) to be conducted by June 2026.
 
 SUNAFIL Integration: 2026 regulations now require verifying that REINFO holders have incorporated their workers into the formal payroll (Planilla).
+
+Res. de Superintendencia Nº 0051-2026-SUNAFIL: Approved the 2026 directive for mandatory workplace inspections of REINFO holders. Rumi's due diligence includes verifying the existence of the required Electronic Payroll (Planilla Electrónica).
 
 *   **Article 4 (Libre Comercialización):** Guarantees the right to free trade of mineral products.
 *   **Article 6 (Posesión de Minerales):** Governs the legal possession of minerals by retailers and artisans.
