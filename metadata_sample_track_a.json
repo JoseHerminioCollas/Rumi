@@ -17,7 +17,11 @@
     "artisan_rna": "N/A - Raw Specimen",
     "cod_reference": "VUCE-ORIGIN-2026-002",
     "compliance_proof_hcs": "0.0.987654",
-    "last_regulatory_check": "2026-03-07T15:30:00Z"
+    "last_regulatory_check": "2026-03-07T15:30:00Z",
+    "vuce_xml_hash": "sha256-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sunafil_payroll_verified": true,
+    "census_status": "Finalized",
+    "sinceramiento_timestamp": "2026-04-20T10:30:00Z"
   },
   "files": [
     {
@@ -46,6 +50,12 @@
     {"trait_type": "Verification Level", "value": "Full Provenance (Mine-Direct)"},
     {"trait_type": "Current Location", "value": "Peru - Processing Hub"},
     {"trait_type": "Is Exported", "value": "False"},
-    {"trait_type": "HCS Compliance Link", "value": "0.0.987654"}
+    {"trait_type": "HCS Compliance Link", "value": "0.0.987654"},
+    {"trait_type": "Verification Level", "value": "Full 2026 Compliance (Hybrid)"},
+    {"trait_type": "Sinceramiento Status", "value": "Verified (Georeferenced)"},
+    {"trait_type": "INEI Census ID", "value": "INEI-2026-MAPE-8822"},
+    {"trait_type": "Export Permit ID", "value": "VUCE-2026-EXP-99"},
+    {"trait_type": "Current Location", "value": "Peru - Pending Export"},
+    {"trait_type": "Is Exported", "value": "False"}
   ]
 }
