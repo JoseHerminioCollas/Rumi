@@ -72,6 +72,7 @@ const transaction = new TokenCreateTransaction()
             .setDenominator(100)
             .setFeeCollectorAccountId(rumiTreasuryId)
     ])
+    .setWipeKey(rumiAdminKey) // Essential for removing lost/seized assets
     .freezeWith(client);
 ```
 
@@ -101,7 +102,9 @@ const transaction = new TokenUpdateNftsTransaction()
 This is the logic for writing every lifecycle event to your single "Master Registry" topic.
 ```javascript
 const transaction = new TopicMessageSubmitTransaction()
-    .setTopicId(rumiMasterTopicId) 
+    .setTopicId(rumiMasterTopicId)
+    .setMaxTransactionFee(new Hbar(0.01))
+    .setTransactionMemo("RUMI-2026-005") // Enables high-speed indexing
     .setMessage(JSON.stringify({
         "stone_id": "RUMI-2026-005",
         "event": "TRANSFORMATION",
