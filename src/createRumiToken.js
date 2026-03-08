@@ -13,12 +13,12 @@ async function main() {
     const operatorId = process.env.OPERATOR_ID;
     const operatorKey = PrivateKey.fromStringECDSA(process.env.OPERATOR_KEY);
     const client = Client.forTestnet().setOperator(operatorId, operatorKey);
-
+    // const client = Client.forMainnet().setOperator(operatorId, operatorKey);
     console.log("Creating Rumi Gemstone NFT Class...");
 
     // 2. Define the Token
     const transaction = new TokenCreateTransaction()
-        .setTokenName("Rumi Peruvian Gemstones")
+        .setTokenName("Rumi")
         .setTokenSymbol("RUMI")
         .setTokenType(TokenType.NonFungibleUnique) // Makes it an NFT
         .setDecimals(0)
