@@ -1,9 +1,10 @@
-import { 
-    Client, 
-    TokenCreateTransaction, 
-    TokenType, 
-    TokenSupplyType, 
-    PrivateKey 
+import {
+    Client,
+    CustomRoyaltyFee,
+    TokenCreateTransaction,
+    TokenType,
+    TokenSupplyType,
+    PrivateKey
 } from "@hashgraph/sdk";
 import "dotenv/config";
 
@@ -23,14 +24,21 @@ async function main() {
         .setDecimals(0)
         .setInitialSupply(0)
         .setTreasuryAccountId(operatorId)
-        .setSupplyType(TokenSupplyType.Finite)
-        .setMaxSupply(10000) // Adjust based on your business model
-        
+        .setSupplyType(TokenSupplyType.Infinite)
+
         // Keys - Using your ECDSA key for all roles
         .setAdminKey(operatorKey)   // To update token properties
         .setSupplyKey(operatorKey)  // To mint new gemstones
         .setMetadataKey(operatorKey) // To update NFT data (HIP-646/850)
-        
+        .setPauseKey(operatorKey) // NEW: Security freeze capability
+        .setFeeScheduleKey(operatorKey)
+        .setCustomFees([
+            new CustomRoyaltyFee()
+                .setNumerator(5)
+                .setDenominator(100)
+                .setFeeCollectorAccountId(operatorId)
+        ])
+        .setWipeKey(operatorKey) // Essential for removing lost/seized assets
         .setTokenMemo("Rumi Provenance: Authentic Peruvian Gemstones")
         .freezeWith(client);
 
