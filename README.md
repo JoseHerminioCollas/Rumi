@@ -56,6 +56,8 @@ Rumi Coin (RUMI) will evolve into the native currency of the ecosystem.
 
 - [Stone Types](stone_types.md)
 
+- [review](review.md)
+
 testnet token id : 0.0.8130672
 
 
