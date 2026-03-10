@@ -54,6 +54,8 @@ Rumi Coin (RUMI) will evolve into the native currency of the ecosystem.
 
 - [User Flow](user_flow.md)
 
+testnet token id : 0.0.8130672
+
 ### Gemstones Semi-Precious Stones that originate from Peru
 
 * Amethyst
