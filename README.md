@@ -54,45 +54,8 @@ Rumi Coin (RUMI) will evolve into the native currency of the ecosystem.
 
 - [User Flow](user_flow.md)
 
+- [Stone Types](stone_types.md)
+
 testnet token id : 0.0.8130672
 
-### Gemstones Semi-Precious Stones that originate from Peru
-
-* Amethyst
-* Amazonite
-* Agate
-* Aragonite
-* Angelite
-* Aquamarine
-* Black Jade
-* Blue Chalcedony
-* Beryl
-* Chrysoberyl  
-* Chrysocolla
-* Dumortierite
-* Emeralds
-* Opal
-* Garnet   
-* Pyrite
-* Rhodonite
-* Leopard Jasper
-* Rosophia
-* Turquoise
-* Obsidian
-* Rhodonite
-* Serpentine
-* Sodalite
-* Topaz
-* Tourmaline
-* Quartz  
-
-### Minerals  that originate from Peru
-
-* Copper
-* Gold
-* Silver
-* Lead
-* Zinc
-* Iron Ore
-* Petroleum
 
