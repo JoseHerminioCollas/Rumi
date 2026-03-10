@@ -132,6 +132,3 @@
 - Exporters in Lima (Peruvian Minerals S.A.C., Inka Minerals Peru) → **artisanal products with full documentation**, eligible for Rumi NFTs.
 
 
-# 🚀 Practical Tip (Cusco Context)
-- Local Cusco shops rarely provide provenance → treat as commercial.
-- Exporters in Lima (Peruvian Minerals S.A.C., Inka Minerals Peru) can ship stones with full documentation → eligible for Rumi NFTs.
