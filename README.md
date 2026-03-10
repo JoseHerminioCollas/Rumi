@@ -38,36 +38,39 @@ This ensures buyers appreciate both the stone’s provenance and the artistry of
 
 ---
 
-## Future Vision: Rumi Coin
+## 🌟 Future Vision
+
+## Rumi Coin
+
 Rumi Coin (RUMI) will evolve into the native currency of the ecosystem.  
 - Used to buy and sell Rumi NFTs.  
 - Rewards miners/artisans for tokenizing stones.  
 - Enables fractional ownership of high‑value gems.  
 - Paired with USDC in liquidity pools to establish real cash value.  
 
-# 🌟 Future Vision: Achala
+## Achala
 
-## Concept
+### Concept
 Achala will be the **jewelry counterpart to Rumi**, representing composite artisanal creations that combine multiple stones into culturally significant pieces. While Rumi certifies the provenance of individual stones, Achala elevates them into **artisanal jewelry**, blending heritage, craftsmanship, and compliance.
 
-## Core Principles
+### Core Principles
 - **Artisan-Centric**: Every Achala NFT requires a valid `artisan_rna`, ensuring recognition of the artisan’s role and compliance with Peruvian law.
 - **Composite Provenance**: Achala NFTs reference multiple Rumi stone IDs, preserving the full provenance trail of each constituent stone.
 - **Cultural Storytelling**: Metadata captures mount type, artisan techniques, and artistic narratives, anchoring jewelry in Peru’s cultural identity.
 - **Compliance Anchoring**: Export events, HS Codes, and VUCE CODs are logged in Hedera Consensus Service, ensuring customs-ready transparency.
 
-## Lifecycle
+### Lifecycle
 1. **Genesis**: Jewelry NFT minted, referencing constituent Rumi stones.
 2. **Mounting Event**: Artisan RNA and mount type recorded, HCS notarization created.
 3. **Sales Event**: Royalties routed to artisan and treasury accounts.
 4. **Export Event**: Jewelry NFT linked to VUCE COD and HS Code, compliance proof anchored in HCS.
 
-## Differentiation
+### Differentiation
 - **Rumi** = Stones (single provenance units).
 - **Achala** = Jewelry (composite artisanal products).
 - Together, they form a dual ecosystem: *Rumi for authenticity, Achala for artistry.*
 
-## Vision
+### Vision
 Achala will position Peruvian jewelry as **globally verifiable cultural assets**, combining blockchain transparency with artisanal heritage. It will empower artisans, protect provenance, and create new markets where buyers can trust both the stone’s origin and the artisan’s craft.
 
 
