@@ -85,6 +85,7 @@
 ## Lima-Based Exporters
 - **Peruvian Minerals & Jewelry S.A.C.**
   - Website: [peruvianminerals.com](https://www.peruvianminerals.com)
+  - Calle Jesús Morales Nro. 429, Urbanización San Juan, San Juan de Miraflores, Lima, Perú.
   - Email: info@peruvianminerals.com
   - Focus: Semi‑precious stones (chrysocolla, pyrite, cabochons, spheres, jewelry).
   - Provides: Export documentation, HS Codes, RUC, provenance data.
