@@ -80,6 +80,58 @@
 
 ---
 
+# 📇 Exporter Contact Checklist (Peru)
+
+## Lima-Based Exporters
+- **Peruvian Minerals & Jewelry S.A.C.**
+  - Website: [peruvianminerals.com](https://www.peruvianminerals.com)
+  - Email: info@peruvianminerals.com
+  - Focus: Semi‑precious stones (chrysocolla, pyrite, cabochons, spheres, jewelry).
+  - Provides: Export documentation, HS Codes, RUC, provenance data.
+
+- **Inka Minerals Peru**
+  - Website: [inkaminerals.com](https://www.inkaminerals.com)
+  - Email: sales@inkaminerals.com
+  - Focus: Wholesale minerals (chrysocolla, pyrite, galena, bolivianite).
+  - Provides: HS Codes, export records, provenance documentation.
+
+## National Registries
+- **PROMPERÚ Export Registry (Exportemos Portal)**
+  - Website: [exportemos.pe](https://www.exportemos.pe)
+  - Use: Search for registered exporters by HS Code or product category.
+  - Provides: Official exporter listings with compliance records.
+
+- **MINCETUR Trade Database**
+  - Website: [mincetur.gob.pe](https://www.mincetur.gob.pe)
+  - Use: Customs and trade records for exporters.
+  - Provides: HS Code classification and export compliance.
+
+## Industry Associations
+- **ADEX (Asociación de Exportadores)**
+  - Website: [adexperu.org.pe](https://www.adexperu.org.pe)
+  - Use: Industry data and exporter listings.
+  - Provides: Verified exporter contacts and trade statistics.
+
+---
+
+# ✅ Buyer’s Action Plan
+1. Contact exporters directly via email or website.
+2. Request documentation before purchase:
+   - Concession ID (INGEMMET)
+   - REINFO ID
+   - Vendor RUC (SUNAT)
+   - HS Code
+   - VUCE COD (if export)
+3. For jewelry → also request artisan RNA.
+4. Avoid tourist shops in Cusco → usually commercial products without provenance.
+
+---
+
+# 🚀 Practical Tip (Cusco Context)
+- Local Cusco shops (Pisac, San Blas, Centro Histórico) → **commercial products only**.
+- Exporters in Lima (Peruvian Minerals S.A.C., Inka Minerals Peru) → **artisanal products with full documentation**, eligible for Rumi NFTs.
+
+
 # 🚀 Practical Tip (Cusco Context)
 - Local Cusco shops rarely provide provenance → treat as commercial.
 - Exporters in Lima (Peruvian Minerals S.A.C., Inka Minerals Peru) can ship stones with full documentation → eligible for Rumi NFTs.
