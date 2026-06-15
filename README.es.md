@@ -72,7 +72,7 @@ Achala será el **equivalente en joyería de Rumi**, representando creaciones ar
 Achala posicionará la joyería peruana como **activos culturales verificables globalmente**, combinando la transparencia de la blockchain con el patrimonio artesanal. Empoderará a los artesanos, protegerá la procedencia y abrirá nuevos mercados donde los compradores puedan confiar tanto en el origen de la piedra o mineral como en la artesanía del creador.
 
 ## 📚 Documentación
-
+- [Documentación de Exportación Minera](rumi-documents/mining-export.md) Guía para la exportación de datos mineros, con pasos de flujo de trabajo, notas de cumplimiento e información de integración.
 - [Lista de verificación para compradores](rumi-documents/buyer_checklist.md) — Guía práctica para compradores, cubre pasos de cumplimiento y adquisición.  
 - [Cumplimiento](rumi-documents/compliance.md) — Normas de exportación, procedimientos aduaneros y referencias regulatorias.  
 - [Gobernanza](rumi-documents/governance.md) — Fases de gobernanza del proyecto, incluyendo propiedad de boutiques y supervisión.  

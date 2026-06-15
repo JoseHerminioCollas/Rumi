@@ -74,7 +74,7 @@ Achala will be the **jewelry counterpart to Rumi**, representing composite artis
 Achala will position Peruvian jewelry as **globally verifiable cultural assets**, combining blockchain transparency with artisanal heritage. It will empower artisans, protect provenance, and create new markets where buyers can trust both the stone or mineral’s origin and the artisan’s craft.
 
 ## 📚 Documentation
-
+- [Mining Export Documentation](rumi-documents/mining-export.md) Guide to exporting mining data, covering workflow steps, compliance notes, and integration details.
 - [Buyer’s Checklist](rumi-documents/buyer_checklist.md) — Practical guide for buyers, covering compliance and purchase steps.  
 - [Compliance](rumi-documents/compliance.md) — Export rules, customs procedures, and regulatory references.  
 - [Governance](rumi-documents/governance.md) — Project governance phases, including boutique shop ownership and oversight.  
