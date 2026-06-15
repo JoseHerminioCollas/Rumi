@@ -26,7 +26,8 @@ function App(): JSX.Element {
   const [open, setOpen] = useState<Item | null>(null)
 
   useEffect(() => {
-    fetch('/data/example_1.json')
+    const baseUrl = import.meta.env.BASE_URL || './'
+    fetch(`${baseUrl}data/example_1.json`)
       .then((r) => r.json())
       .then((item: Item) => {
         const list: Item[] = [item]
