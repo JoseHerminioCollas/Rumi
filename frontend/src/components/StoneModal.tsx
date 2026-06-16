@@ -1,6 +1,6 @@
 // src/components/StoneModal.tsx
 import React from 'react';
-import { Item } from '../App';
+import { Item } from '../types/stone';
 
 interface StoneModalProps {
   open: Item | null;

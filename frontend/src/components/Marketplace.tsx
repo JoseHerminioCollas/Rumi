@@ -1,7 +1,7 @@
 // src/components/Marketplace.tsx
 import React from 'react';
 import MarketplaceCard from './MarketplaceCard';
-import { Item } from '../App';
+import { Item } from '../types/stone';
 
 interface MarketplaceProps {
   items: Item[];

@@ -1,20 +1,30 @@
+// src/components/Hero.tsx
 import React from 'react';
-import { Item } from '../App';
+import { Item } from '../types/stone';
 
-export function Hero(filtered: Item[], setOpen: React.Dispatch<React.SetStateAction<Item | null>>) {
-  return <section className="hero">
-    <div className="hero-image">🪨</div>
-    <div className="hero-info">
-      <h2>{filtered[0]?.name || 'Featured stone'}</h2>
-      <p>
-        Origin: {filtered[0]?.properties.mining_concession || '—'} · Artisan:{' '}
-        {filtered[0]?.attributes.find((a) => a.trait_type === 'Artisan')?.value || '—'} · Cut:{' '}
-        {filtered[0]?.attributes.find((a) => a.trait_type === 'Stone Cut')?.value || '—'}
-      </p>
-      <div className="hero-actions">
-        <button onClick={() => setOpen(filtered[0] || null)}>View Stone</button>
-        <button>Buy with RUMI</button>
-      </div>
-    </div>
-  </section>;
+interface HeroProps {
+  items: Item[];
+  setOpen: React.Dispatch<React.SetStateAction<Item | null>>;
 }
+
+export const Hero: React.FC<HeroProps> = ({ items, setOpen }) => {
+  const featured = items[0];
+
+  return (
+    <section className="hero">
+      <div className="hero-image">🪨</div>
+      <div className="hero-info">
+        <h2>{featured?.name || 'Featured stone'}</h2>
+        <p>
+          Origin: {featured?.properties.mining_concession || '—'} · Artisan:{' '}
+          {featured?.attributes.find((a) => a.trait_type === 'Artisan')?.value || '—'} · Cut:{' '}
+          {featured?.attributes.find((a) => a.trait_type === 'Stone Cut')?.value || '—'}
+        </p>
+        <div className="hero-actions">
+          <button onClick={() => setOpen(featured || null)}>View Stone</button>
+          <button>Buy with RUMI</button>
+        </div>
+      </div>
+    </section>
+  );
+};

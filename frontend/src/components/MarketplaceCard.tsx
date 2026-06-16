@@ -1,6 +1,6 @@
 // src/components/MarketplaceCard.tsx
 import React from 'react';
-import { Item } from '../App';
+import { Item } from '../types/stone';
 
 interface MarketplaceCardProps {
   item: Item;
