@@ -7,7 +7,7 @@ import styles from "./App.module.css";
 import AboutPage from "./components/AboutPage";
 import FAQ from "./components/FAQ";
 import Privacy from "./components/Privacy";
-// import ContactPage from "./pages/ContactPage";
+import Contact from "./components/Contact";
 // import MintPage from "./pages/MintPage";
 // import CompliancePage from "./pages/CompliancePage";
 
@@ -22,8 +22,8 @@ function App(): JSX.Element {
           <Route path="/about" element={<AboutPage />} />
            <Route path="/faqs" element={<FAQ />} />
           <Route path="/privacy" element={<Privacy />} />
-          {/* <Route path="/contact" element={<ContactPage />} />
-          <Route path="/admin" element={<MintPage />} />
+           <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/admin" element={<MintPage />} />
           <Route path="/compliance" element={<CompliancePage />} /> */}
         </Routes>
         <Footer />
