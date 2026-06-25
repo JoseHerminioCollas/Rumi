@@ -12,10 +12,16 @@ interface FiltersProps {
     mounted: string;
   };
   setFilters: (filters: any) => void;
+  setPage: (page: number) => void;
 }
 
-const Filters: React.FC<FiltersProps> = ({ filters, setFilters }) => {
+const Filters: React.FC<FiltersProps> = ({ filters, setFilters, setPage }) => {
   const { t } = useTranslation();
+  const updateFilter = (key: string, value: string) => {
+    setFilters({ ...filters, [key]: value });
+    setPage(1);
+  };
+
   return (
     <section className={styles.filters}>
       <label className={styles.label}>
@@ -23,46 +29,48 @@ const Filters: React.FC<FiltersProps> = ({ filters, setFilters }) => {
         <select
           className={styles.select}
           value={filters.type}
-          onChange={(e) => setFilters({ ...filters, type: e.target.value })}
+          onChange={(e) => {
+            updateFilter("type", e.target.value);
+          }}
         >
           <option value="">{t("filters.all")}</option>
-        {filters.types.map((t) => (
-          <option key={t} value={t}>
-            {t}
-          </option>
-        ))}
-      </select>
-    </label>
+          {filters.types.map((t) => (
+            <option key={t} value={t}>
+              {t}
+            </option>
+          ))}
+        </select>
+      </label>
 
-    <label className={styles.label}>
-      {t("filters.cut")}
-      <select
-        className={styles.select}
-        value={filters.cut}
-        onChange={(e) => setFilters({ ...filters, cut: e.target.value })}
-      >
-        <option value="">{t("filters.all")}</option>
-        {filters.cuts.map((c) => (
-          <option key={c} value={c}>
-            {c}
-          </option>
-        ))}
-      </select>
-    </label>
+      <label className={styles.label}>
+        {t("filters.cut")}
+        <select
+          className={styles.select}
+          value={filters.cut}
+          onChange={(e) => updateFilter("cut", e.target.value)}
+        >
+          <option value="">{t("filters.all")}</option>
+          {filters.cuts.map((c) => (
+            <option key={c} value={c}>
+              {c}
+            </option>
+          ))}
+        </select>
+      </label>
 
-    <label className={styles.label}>
-      {t("filters.mounted")}
-      <select
-        className={styles.select}
-        value={filters.mounted}
-        onChange={(e) => setFilters({ ...filters, mounted: e.target.value })}
-      >
-        <option value="">{t("filters.all")}</option>
-        <option value="true">{t("filters.mounted_yes")}</option>
-        <option value="false">{t("filters.mounted_no")}</option>
-      </select>
-    </label>
-  </section>
+      <label className={styles.label}>
+        {t("filters.mounted")}
+        <select
+          className={styles.select}
+          value={filters.mounted}
+          onChange={(e) => updateFilter("mounted", e.target.value)}
+        >
+          <option value="">{t("filters.all")}</option>
+          <option value="true">{t("filters.mounted_yes")}</option>
+          <option value="false">{t("filters.mounted_no")}</option>
+        </select>
+      </label>
+    </section>
   );
 };
 export default Filters;

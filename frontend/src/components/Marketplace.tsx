@@ -47,24 +47,16 @@ const Marketplace: React.FC = () => {
   return (
     <section className={styles.marketplace}>
       <div className={styles.controls}>
-        <Filters filters={filters} setFilters={setFilters} />
+        <Filters filters={filters} setFilters={setFilters} setPage={setPage} />
         <Pager page={page} totalPages={totalPages} setPage={setPage} />
       </div>
-      {/* <Filters filters={filters} setFilters={setFilters} />
-      <Pager page={page} totalPages={totalPages} setPage={setPage} /> */}
       {filtered.length === 0 ? (
-        <div className={styles.noResults}>
-          {t("marketplace.noResults")}
-        </div>
+        <div className={styles.noResults}>{t("marketplace.noResults")}</div>
       ) : (
         <>
           <div className={styles.cards}>
             {pagedItems.map((it) => (
-              <Card
-                key={it.properties.stone_id}
-                item={it}
-                onClick={setOpen}
-              />
+              <Card key={it.properties.stone_id} item={it} onClick={setOpen} />
             ))}
           </div>
         </>
