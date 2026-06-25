@@ -90,6 +90,7 @@ const Footer = () => {
         </NavLink>
       </div>
       <div className={styles.footerCopy}>{t("footer.copyright")}</div>
+      <p>Photos by <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
     </footer>
   );
 };
