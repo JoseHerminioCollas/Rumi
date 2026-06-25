@@ -20,6 +20,13 @@
   gap: 18px;
   flex-wrap: wrap;
 }
+.modalBody img {
+  flex: 1;
+  min-width: 240px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 6px;
+}
 .hidden {
   display: none;
 }

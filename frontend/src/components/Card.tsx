@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = ({ item, onClick }) => {
   return (
     <div className={styles.card}>
       <div className={styles.thumb} onClick={() => onClick(item)}>
-        🪨
+        <img src={item.image} alt={item.name} width="100%" height="100%" />
       </div>
       <div className={styles.meta}>
         <h3 className={styles.type}>{type}</h3>

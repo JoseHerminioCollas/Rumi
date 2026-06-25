@@ -21,7 +21,7 @@ const StoneModal: React.FC<StoneModalProps> = ({ open, setOpen }) => {
         </button>
 
         <div className={styles.modalBody}>
-          <div className={styles.thumb}>🪨</div>
+          <img src={open.image} alt={open.name} width="100%" height="100%" />
           <div>
             <h2>
               {
